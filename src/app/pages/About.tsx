@@ -34,7 +34,7 @@ export function About() {
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
           style={{
-            backgroundImage: `url(/images/shop_interior_1780571741726.png)`,
+            backgroundImage: `url(/images/Nouveau dossier/sundae.jpeg)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-transparent" />
@@ -77,13 +77,16 @@ export function About() {
               
               <div className="font-jost text-sm font-light text-muted-foreground leading-relaxed flex flex-col gap-6">
                 <p>
-                  Maison Amarena est née d'une vision simple mais intransigeante : introduire le véritable art du gelato italien à Agadir, dans un écrin de sophistication digne des plus grands salons d'Europe.
+                  AMARENA LA MAMA DEL GELATO est née d’une ambition claire : offrir à Agadir l’authenticité du gelato italien artisanal à travers une expérience gourmande élégante et raffinée.
                 </p>
                 <p>
-                  Chaque matin, nos maîtres glaciers sélectionnent à l'aube des fruits de saison gorgés de soleil et des laits d'une pureté absolue. En combinant ces produits d'exception aux pistaches siciliennes, noisettes du Piémont et cacaos grands crus, nous créons des desserts uniques aux arômes authentiques.
+                  Forte de 5 années d’expertise acquises entre le Royaume-Uni et l’Italie, notre maison s’inspire des meilleures traditions du gelato pour proposer des créations d’exception élaborées à partir d’ingrédients soigneusement sélectionnés.
                 </p>
                 <p>
-                  Notre boutique de Founty Bay est pensée comme un havre de délices et d'esthétique, offrant un service luxueux pour des dégustations inoubliables sous le ciel d'Agadir.
+                  Chaque jour, nos équipes privilégient la qualité, la fraîcheur et le savoir-faire artisanal afin de créer des gelatos, desserts, chocolats et boissons aux saveurs authentiques. Notre engagement est simple : offrir une expérience gustative unique où chaque détail compte.
+                </p>
+                <p>
+                  Située au cœur de Founty Bay à Agadir, notre boutique a été imaginée comme un lieu chaleureux et élégant, où la gourmandise rencontre l’art de recevoir. Plus qu’un glacier, AMARENA est une destination dédiée aux amateurs de saveurs raffinées, de moments de partage et d’excellence artisanale.
                 </p>
               </div>
             </FadeIn>
@@ -94,8 +97,8 @@ export function About() {
             <FadeIn delay={0.2}>
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden bg-secondary shadow-2xl">
-                  <img
-                    src="/images/trio_scoops_hero_1780571685837.png"
+                  <img 
+                    src="/images/WhatsApp Image 2026-06-08 at 10.54.23 (1).jpeg"
                     alt="Gelatos artisanaux signatures Amarena"
                     className="w-full h-full object-cover transition-transform duration-[6s] hover:scale-105"
                   />

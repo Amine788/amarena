@@ -91,7 +91,7 @@ export function Contact() {
       <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url(/images/chocolate_pour_1780571728870.png)` }}
+          style={{ backgroundImage: `url(/images/Nouveau dossier/ice cafe.jpeg)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
@@ -199,8 +199,8 @@ export function Contact() {
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-6 relative z-10">
                       {[
-                        { key: "name", label: "Votre Nom", type: "text", placeholder: "Arthur Rimbaud" },
-                        { key: "email", label: "Votre Adresse Email", type: "email", placeholder: "arthur@rimbaud.fr" },
+                        { key: "name", label: "Votre Nom", type: "text" },
+                        { key: "email", label: "Votre Adresse Email", type: "email" },
                       ].map(field => (
                         <div key={field.key} className="flex flex-col gap-2">
                           <label
@@ -210,7 +210,6 @@ export function Contact() {
                           </label>
                           <input
                             type={field.type}
-                            placeholder={field.placeholder}
                             required
                             value={(form as any)[field.key]}
                             onChange={e => setForm(f => ({ ...f, [field.key]: e.target.value }))}
@@ -244,7 +243,6 @@ export function Contact() {
                           Message
                         </label>
                         <textarea
-                          placeholder="Faites-nous part de vos envies ou demandes de réservations..."
                           required
                           rows={6}
                           value={form.message}

@@ -98,16 +98,12 @@ export function Root() {
     <div className="min-h-screen flex flex-col transition-colors duration-500 selection:bg-accent/20">
       {/* Cinematic Custom Cursor */}
       {showCursor && (
-        <>
-          <div 
-            className="custom-cursor hidden md:block" 
-            style={{ left: cursorPos.x, top: cursorPos.y }} 
-          />
-          <div 
-            className="custom-cursor-ring hidden md:block" 
-            style={{ left: ringPos.x, top: ringPos.y }} 
-          />
-        </>
+        <div 
+          className="custom-cursor hidden md:flex items-center justify-center select-none" 
+          style={{ left: cursorPos.x, top: cursorPos.y }} 
+        >
+          {'\u{1F367}'}
+        </div>
       )}
 
       {/* Luxury Brand Intro Screen */}

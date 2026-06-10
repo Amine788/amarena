@@ -23,139 +23,301 @@ const categories = [
     key: "glaces",
     label: "Glaces Artisanales",
     icon: "🍨",
-    img: "/images/pistachio_scoop_1780571675058.png",
+    img: "/images/Nouveau dossier/sundae.jpeg",
+    tagline: "1 à 3 boules, parfums signature et cornets artisanaux.",
     items: [
-      { name: "Pistache Royale", desc: "Pistaches DOP de Sicile torréfiées à sec, miel brut et fleur de sel" },
-      { name: "Noir Intense 72°", desc: "Chocolat noir grand cru, coulis chaud et grué de cacao" },
-      { name: "Vanille Tahitienne", desc: "Gousses de vanille de Tahiti infusées 24h, parfum doux et complexe" },
-      { name: "Amarena Classique", desc: "Gelato fior di latte marbré de cerises amarena sauvages confites" },
-      { name: "Sorbet Framboise & Rose", desc: "Framboises fraîches écrasées infusées aux pétales de roses bulgares" },
-      { name: "Citron de Sicile & Menthe", desc: "Sorbet rafraîchissant aux citrons de Syracuse et menthe fraîche du jardin" },
+      { name: "1 Boule", price: "13 DH" },
+      { name: "2 Boules", price: "24 DH" },
+      { name: "3 Boules", price: "35 DH" },
+      { name: "Pistache", price: "16 DH" },
+      { name: "Franui", price: "18 DH" },
+      { name: "Cornet de Glace", price: "15 DH" },
     ],
   },
   {
-    key: "sundaes",
-    label: "Sundaes Signatures",
-    icon: "🍧",
-    img: "/images/sundae_crystal_1780571697743.png",
-    items: [
-      { name: "Amarena Sundae Royal", desc: "Trio de nos meilleures créations, noisettes caramélisées et crème fouettée maison" },
-      { name: "Le Chocolatier", desc: "Gelato chocolat noir, brownie fondant maison, coulis chaud et pépites de chocolat" },
-      { name: "Oreo En Folie", desc: "Gelato vanille, brisures d'Oreo, sauce chocolat crémeuse et chantilly parfumée" },
-      { name: "Délice aux Fruits Rouges", desc: "Gelato framboise, fraises fraîches, coulis acidulé et meringue croustillante" },
-      { name: "Banana & Fraise", desc: "Gelato vanille et fraise, tranches de banane fraîche, sauce caramel au beurre salé" },
-    ],
-  },
-  {
-    key: "mcflurry",
-    label: "McFlurry Amarena",
+    key: "ice-cream-slices",
+    label: "Ice Cream Slices",
     icon: "🍦",
-    img: "/images/vanilla_cone_elegant_1780571715882.png",
+    img: "/images/Nouveau dossier/matcha.jpeg",
+    note: "Des portions gourmandes, idéales à partager.",
     items: [
-      { name: "McFlurry Oreo", desc: "Mélange onctueux avec biscuits Oreo croquants et sauce chocolat maison" },
-      { name: "McFlurry Nutella", desc: "Notre glace crémeuse marbrée de véritable Nutella fondu" },
-      { name: "McFlurry Lotus Biscoff", desc: "Sauce spéculoos et biscuits Lotus croustillants écrasés" },
-      { name: "McFlurry Kinder Bueno", desc: "Brisures de Kinder Bueno et crème noisette fondante" },
-      { name: "McFlurry Ferrero Rocher", desc: "Éclats de Ferrero Rocher et coulis praliné d'exception" },
+      { name: "1 Ice Cream Slice", price: "30 DH" },
+      { name: "2 Ice Cream Slices", price: "56 DH" },
+      { name: "3 Ice Cream Slices", price: "78 DH" },
+    ],
+  },
+  {
+    key: "crunch-box",
+    label: "Crunch Box",
+    icon: "📦",
+    img: "/images/Nouveau dossier/sundae.jpeg",
+    note: "Tous à 18 DH.",
+    items: [
+      { name: "Ferrero Rocher" },
+      { name: "Kinder Bueno" },
+      { name: "KitKat" },
+      { name: "Caramel" },
+      { name: "Nutella" },
+      { name: "Oreo" },
+      { name: "Lotus" },
+    ],
+  },
+  {
+    key: "iced-coffees",
+    label: "Iced Coffees",
+    icon: "🧊",
+    img: "/images/Nouveau dossier/ice cafe.jpeg",
+    note: "Sirops disponibles : Caramel · Vanille · Noisette · Gingembre · Cannelle · Popcorn. Tous à 28 DH.",
+    items: [
+      { name: "Iced Latte" },
+      { name: "Spanish Iced Latte" },
+      { name: "Iced Cappuccino" },
+      { name: "Iced Flat White" },
+      { name: "Iced Americano" },
+      { name: "Iced Mocha" },
     ],
   },
   {
     key: "milkshakes",
-    label: "Milkshakes Premium",
-    icon: "🥛",
-    img: "/images/chocolate_pour_1780571728870.png",
+    label: "Milkshakes",
+    icon: "🥤",
+    img: "/images/Nouveau dossier/milk shake.jpeg",
+    tagline: "Préparés avec une boule de glace et de la soft vanilla ice cream.",
+    note: "Tous à 38 DH.",
     items: [
-      { name: "Milkshake Pistache de Sicile", desc: "Gelato pistache royale mixé au lait crémeux et éclats de pistaches torréfiées" },
-      { name: "Milkshake Ferrero Rocher", desc: "Gelato chocolat et praliné noisette, surmonté de chantilly dorée" },
-      { name: "Milkshake Tiramisu", desc: "Gelato café et mascarpone, biscuit imbibé d'espresso et cacao en poudre" },
-      { name: "Milkshake Kinder Bueno", desc: "Glace onctueuse mixée aux brisures de Kinder Bueno blanc" },
-      { name: "Milkshake Lotus Speculoos", desc: "Glace spéculoos Lotus et éclats croustillants de biscuits" },
+      { name: "Chocolat Noir" },
+      { name: "Oreo" },
+      { name: "Ferrero Rocher" },
+      { name: "Kinder Bueno" },
+      { name: "Lotus Biscoff" },
+      { name: "Snickers" },
+      { name: "Vanille" },
+      { name: "Pistache" },
+      { name: "Tiramisu" },
     ],
   },
   {
-    key: "matcha",
-    label: "Matcha Collection",
-    icon: "🍵",
-    img: "/images/trio_scoops_hero_1780571685837.png",
+    key: "affogato",
+    label: "Affogato",
+    icon: "☕",
+    img: "/images/Nouveau dossier/affogato.jpeg",
+    note: "Tous à 38 DH.",
     items: [
-      { name: "Strawberry Matcha Latte", desc: "Pure purée de fraises fraîches, lait velouté et matcha de cérémonie japonais fouetté" },
-      { name: "Mango Matcha Fusion", desc: "Coulis de mangue Alphonso mûre, lait d'avoine et matcha bio" },
-      { name: "Coconut Matcha Latte", desc: "Eau de coco fraîche, lait de coco crémeux et matcha premium glacé" },
-      { name: "Vanilla Matcha Latte", desc: "Sirop de vanille de Madagascar maison, lait et matcha fouetté" },
-      { name: "Honey Matcha Latte", desc: "Miel de fleurs local sauvage, lait chaud et matcha de cérémonie" },
+      { name: "Affogato Tiramisu" },
+      { name: "Affogato Vanille" },
+      { name: "Affogato Pistache" },
+      { name: "Affogato Chocolat" },
+      { name: "Affogato Kinder Bueno" },
+      { name: "Affogato Ferrero Rocher" },
+      { name: "Affogato Oreo" },
+      { name: "Affogato Cheesecake" },
     ],
   },
   {
-    key: "cafes-glaces",
-    label: "Cafés Glacés",
-    icon: "🧊",
-    img: "/images/shop_interior_1780571741726.png",
+    key: "frappes",
+    label: "Frappés",
+    icon: "🧋",
+    img: "/images/Nouveau dossier/frappes.jpeg",
+    note: "Tous à 36 DH.",
     items: [
-      { name: "Iced Flat White", desc: "Double shot d'espresso d'Éthiopie glacé, lait froid et fine mousse" },
-      { name: "Iced Caramel Macchiato", desc: "Espresso, lait crémeux, sirop de vanille et filet de caramel beurre salé" },
-      { name: "Iced Latte Premium", desc: "Espresso de spécialité versé sur du lait glacé" },
-      { name: "Iced Cappuccino", desc: "Cappuccino frappé avec une mousse de lait onctueuse et froide" },
-      { name: "Iced Mocha", desc: "Mélange gourmand d'espresso, chocolat noir et lait frais glacé" },
+      { name: "Tropical Mango Bubble" },
+      { name: "Fraise" },
+      { name: "Myrtille" },
+      { name: "Vanille" },
+      { name: "Salted Caramel Café" },
+      { name: "Salted Caramel" },
+      { name: "Chocolat" },
+      { name: "Lotus" },
+    ],
+  },
+  {
+    key: "sundaes",
+    label: "Sundaes",
+    icon: "🍧",
+    img: "/images/Nouveau dossier/sundae.jpeg",
+    note: "Tous à 48 DH.",
+    groups: [
+      {
+        title: "Sundaes Signature",
+        items: [
+          {
+            name: "Chaud et Froid",
+            desc: "Boule glace chocolat, cake chocolat chaud, soft vanilla ice cream, sauce caramel, copeaux chocolat au lait, gaufrette Amarena",
+          },
+          {
+            name: "Amarena Sundae Royal",
+            desc: "Boule glace Ferrero Rocher, biscuit Ferrero Rocher, soft vanilla ice cream, sauce chocolat au lait, copeaux chocolat, gaufrette Amarena",
+          },
+          {
+            name: "Chocolatier",
+            desc: "Boule glace chocolat, boule glace vanille, soft vanilla ice cream, sauce chocolat au lait, copeaux chocolat, gaufrette Amarena",
+          },
+          {
+            name: "Biscoff et Caramel",
+            desc: "Boule glace spéculoos, boule glace caramel salé, soft vanilla ice cream, sauce caramel, gaufrette Amarena",
+          },
+          {
+            name: "Oreo en Folie",
+            desc: "2 boules glace Oreo, soft vanilla ice cream, Oreo crumbs, sauce chocolat au lait, gaufrette Amarena",
+          },
+          {
+            name: "Délice aux Fruits Rouges",
+            desc: "Boule sorbet framboise, boule sorbet fraise, soft vanilla ice cream, fraises fraîches, sauce fraise, gaufrette Amarena",
+          },
+          {
+            name: "Banane et Fraise",
+            desc: "Boule glace vanille, boule sorbet fraise, soft vanilla ice cream, banane et fraises fraîches, sauce mangue et fraise, gaufrette Amarena",
+          },
+          {
+            name: "Kids Sundae",
+            desc: "Boule glace Bubble Gum bleue, boule glace rose, soft vanilla ice cream, sauce bubble gum, sauce fraise, sprinklers, copeaux chocolat blanc, gaufrette Amarena",
+          },
+        ],
+      },
     ],
   },
   {
     key: "boissons-chaudes",
     label: "Boissons Chaudes",
     icon: "☕",
-    img: "/images/chocolate_pour_1780571728870.png",
+    img: "/images/Nouveau dossier/boisson chaud.png",
     items: [
-      { name: "Espresso Double Bio", desc: "Café d'origine Arabica torréfié à cœur, notes chocolatées" },
-      { name: "Cappuccino Italien", desc: "Espresso intense, lait vaporisé et mousse de lait soyeuse" },
-      { name: "Café Latte Onctueux", desc: "Lait chaud délicatement infusé d'un espresso de spécialité" },
-      { name: "Chocolat Chaud Amarena", desc: "Chocolat grand cru fondu au lait entier bio, texture velours" },
-      { name: "Mocha Signature", desc: "Chocolat fondu, espresso et lait chaud onctueux" },
+      { name: "Café Latte", price: "20 DH" },
+      { name: "Cappuccino", price: "22 DH" },
+      { name: "Americano", price: "18 DH" },
+      { name: "Flat White", price: "20 DH" },
+      { name: "Mocha", price: "22 DH" },
+      { name: "Espresso", price: "15 DH" },
+      { name: "Cortado", price: "16 DH" },
+      { name: "Chocolat Chaud Français", price: "26 DH" },
+      { name: "Chocolat Blanc Chaud", price: "26 DH" },
     ],
   },
   {
     key: "jus",
-    label: "Jus Frais",
-    icon: "🍹",
-    img: "/images/media__1780571703270.png",
+    label: "Jus",
+    icon: "🧃",
+    img: "/images/Nouveau dossier/jus.jpeg",
     items: [
-      { name: "Orange Pressée", desc: "Oranges de saison pressées à la minute pour une fraîcheur absolue" },
-      { name: "Mangue Tropicale", desc: "Jus de mangue onctueux et parfumé, préparé à partir de fruits mûrs" },
-      { name: "Kiwi Énergie", desc: "Jus de kiwi frais, riche en vitamines et légèrement acidulé" },
-      { name: "Fraise Délice", desc: "Nectar de fraises fraîches mixées pour une douceur fruitée" },
-      { name: "Citronnade Maison", desc: "Jus de citron frais, menthe et une touche de sucre de canne" },
-      { name: "Fruits Rouges Mix", desc: "Mélange de framboises, fraises et myrtilles pour un cocktail intense" },
+      { name: "Orange", price: "20 DH" },
+      { name: "Fraise", price: "20 DH" },
+      { name: "Citron", price: "20 DH" },
+      { name: "Banane", price: "20 DH" },
+      { name: "Pommes", price: "20 DH" },
+      { name: "Carotte", price: "20 DH" },
+      { name: "Ananas", price: "26 DH" },
+      { name: "Mangue", price: "26 DH" },
+      { name: "Fruits Rouges", price: "26 DH" },
+      { name: "Kiwi", price: "26 DH" },
+    ],
+  },
+  {
+    key: "matcha",
+    label: "Matcha",
+    icon: "🍵",
+    img: "/images/Nouveau dossier/matcha.jpeg",
+    note: "Tous à 28 DH.",
+    items: [
+      { name: "Strawberry Matcha Latte" },
+      { name: "Mango Matcha Fusion" },
+      { name: "Myrtille Matcha" },
+      { name: "Coconut Matcha Latte" },
+      { name: "Vanilla Matcha Latte" },
+      { name: "Honey Matcha Latte" },
+      { name: "Matcha Coffee" },
+      { name: "Sparkling Matcha" },
+      { name: "Matcha Tonic" },
     ],
   },
   {
     key: "gaufres",
     label: "Gaufres & Crêpes",
     icon: "🧇",
-    img: "/images/vanilla_cone_elegant_1780571715882.png",
+    img: "/images/Nouveau dossier/gaufres.png",
     items: [
-      { name: "Gaufre Ferrero Rocher", desc: "Gaufre croustillante nappée de chocolat noisette, éclats de Ferrero Rocher et pralin" },
-      { name: "Gaufre Kinder Bueno", desc: "Gaufre avec sauce Kinder Bueno, morceaux croustillants et gelato vanille" },
-      { name: "Gaufre Oreo", desc: "Gaufre recouverte de brisures d'Oreo et d'un coulis de chocolat blanc" },
-      { name: "Gaufre Nutella", desc: "Gaufre classique généreusement nappée de véritable Nutella" },
-      { name: "Gaufre Speculoos", desc: "Garnie de crème de spéculoos Lotus et miettes croquantes" },
-      { name: "Gaufre Banane & Fraise", desc: "Fruits frais, coulis de chocolat et une touche de chantilly" },
-      { name: "Crêpe Chocolat Obsession", desc: "Crêpe fine garnie de chocolat fondu maison et de pépites de chocolat" },
-      { name: "Crêpe Ferrero Rocher", desc: "Nappage noisette intense et éclats de Ferrero Rocher" },
-      { name: "Crêpe Kinder Bueno", desc: "Fourrée à la crème Kinder Bueno et morceaux croquants" },
-      { name: "Crêpe Oreo", desc: "Brisures d'Oreo et sauce chocolat crémeuse" },
-      { name: "Crêpe Nutella", desc: "La traditionnelle crêpe au Nutella, fondante et généreuse" },
-      { name: "Crêpe Banane & Fraise", desc: "Duo de fruits frais et coulis de fraise maison" },
+      { name: "Gaufre Ferrero Rocher", desc: "Gaufre croustillante nappée de chocolat noisette, éclats de Ferrero Rocher et pralin", price: "48 DH" },
+      { name: "Gaufre Kinder Bueno", desc: "Gaufre avec sauce Kinder Bueno, morceaux croustillants et gelato vanille", price: "48 DH" },
+      { name: "Gaufre Oreo", desc: "Gaufre recouverte de brisures d'Oreo et d'un coulis de chocolat blanc", price: "42 DH" },
+      { name: "Gaufre Nutella", desc: "Gaufre classique généreusement nappée de véritable Nutella", price: "42 DH" },
+      { name: "Gaufre Speculoos", desc: "Garnie de crème de spéculoos Lotus et miettes crouquantes", price: "42 DH" },
+      { name: "Gaufre Banane & Fraise", desc: "Fruits frais, coulis de chocolat et une touche de chantilly", price: "42 DH" },
+      { name: "Crêpe Chocolat Obsession", desc: "Boule glace chocolat, cake chocolat chaud, soft vanilla ice cream, sauce chocolat au lait, copeaux chocolat au lait, gaufrette Amarena", price: "46 DH" },
+      { name: "Crêpe Ferrero Rocher", desc: "Nappage noisette intense et éclats de Ferrero Rocher", price: "48 DH" },
+      { name: "Crêpe Kinder Bueno", desc: "Fourrée à la crème Kinder Bueno et morceaux croquants", price: "48 DH" },
+      { name: "Crêpe Oreo", desc: "Brisures d'Oreo et sauce chocolat crémeuse", price: "42 DH" },
+      { name: "Crêpe Nutella", desc: "La traditionnelle crêpe au Nutella, fondante et généreuse", price: "42 DH" },
+      { name: "Crêpe Banane & Fraise", desc: "Duo de fruits frais et coulis de fraise maison", price: "42 DH" },
     ],
   },
   {
     key: "pancakes",
-    label: "Pancakes Délicieux",
+    label: "Pancakes",
     icon: "🥞",
-    img: "/images/sundae_crystal_1780571697743.png",
+    img: "/images/Nouveau dossier/pancakes.png",
+    note: "Tous à 46 DH.",
     items: [
-      { name: "Pancakes Oreo", desc: "Pancakes moelleux, brisures d'Oreo et sauce chocolat blanc" },
-      { name: "Pancakes Fruits Rouges", desc: "Accompagnés de fruits rouges frais et d'un coulis acidulé" },
-      { name: "Pancakes Lotus Biscoff", desc: "Recouverts de crème Lotus fondante et biscuits croquants" },
-      { name: "Pancakes Kinder Bueno", desc: "Nappés de sauce Kinder et morceaux de chocolat noisette" },
-      { name: "Pancakes Amarena Signature", desc: "Coulis de cerise amarena, crème fior di latte et amandes grillées" },
+      { name: "Crème Nutella", desc: "Boule glace vanille, sauce Nutella, Oreo crumbs, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+      { name: "Fruits Rouges", desc: "Boule glace fruits rouges, sauce fraise, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+      { name: "Oreo", desc: "Boule glace Oreo, Oreo crumbs, sauce chocolat au lait, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+      { name: "Lotus Biscoff", desc: "Boule glace Lotus Biscoff, Lotus Biscoff crumbs, sauce Lotus Biscoff, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+      { name: "Kinder Bueno", desc: "Boule glace Kinder Bueno, Kinder Bueno crumbs, sauce chocolat au lait, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+      { name: "Amarena", desc: "Boule glace Amarena au yaourt, sauce chocolat blanc, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
+    ],
+  },
+  {
+    key: "cookie-dough",
+    label: "Cookie Dough & Hot Puddings",
+    icon: "🍪",
+    img: "/images/Nouveau dossier/cookie dough et hot puddings 1.jpeg",
+    note: "Tous à 46 DH.",
+    items: [
+      { name: "Double Treat", desc: "Cookie chocolat au lait + chocolat blanc, boule glace Oreo, soft vanilla ice cream, Ferrero Rocher, sauces chocolat blanc et au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
+      { name: "Ferrero Rocher", desc: "Double cookie chocolat au lait, boule glace Ferrero Rocher, sauce chocolat au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
+      { name: "Kinder Bueno (Chocolat au lait)", desc: "Double cookie chocolat au lait, boule glace Kinder Bueno, biscuit Kinder Bueno, sauce chocolat au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
+      { name: "Kinder Bueno (Chocolat blanc)", desc: "Double cookie chocolat blanc, boule glace Kinder Bueno, biscuit Kinder Bueno chocolat blanc, sauce chocolat blanc, copeaux chocolat blanc, gaufrette Amarena", price: "46 DH" },
+      { name: "Chocolat au Lait", desc: "Double cookie chocolat au lait, boule glace chocolat noir, sauce chocolat au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
+      { name: "Chocolat Blanc", desc: "Double cookie chocolat blanc, boule glace chocolat noir, sauce chocolat blanc, copeaux chocolat blanc, gaufrette Amarena", price: "46 DH" },
+      { name: "Crème Nutella", desc: "Cookie chocolat au lait, boule glace vanille, nutella, copeaux chocolat au lait, gaufrette Amarena", price: "46 DH" },
+      { name: "Oreo Cookie Dough", desc: "Double cookie chocolat au lait, boule glace Oreo, Oreo crumbs, sauce chocolat blanc, gaufrette Amarena", price: "46 DH" },
+      { name: "Cookies Banane et Fraise", desc: "Cookie chocolat au lait et chocolat blanc, boule glace vanille, sauce chocolat blanc et au lait, gaufrette Amarena", price: "46 DH" },
+    ],
+  },
+  {
+    key: "sweets-cakes",
+    label: "Sweets & Cakes",
+    icon: "🍰",
+    img: "/images/Nouveau dossier/san sebastian.jpeg",
+    groups: [
+      {
+        title: "San Sebastian",
+        subtitle: "Tous à 35 DH",
+        items: [
+          { name: "San Sebastian Chocolat au Lait" },
+          { name: "San Sebastian Kunafa Pistache" },
+          { name: "San Sebastian Pistache" },
+          { name: "San Sebastian Trio Chocolat" },
+        ],
+      },
+      {
+        title: "Fondants",
+        subtitle: "Tous à 45 DH",
+        items: [
+          { name: "Fondant Chocolat" },
+          { name: "Fondant Caramel" },
+          { name: "Fondant Kunafa Pistache" },
+          { name: "Fondant Pistache" },
+        ],
+      },
+      {
+        title: "Brownies",
+        subtitle: "Tous à 35 DH",
+        items: [
+          { name: "Brownie Kunafa Pistache" },
+          { name: "Brownie Cookies" },
+          { name: "Brownie Cheesecake" },
+          { name: "Brownie" },
+        ],
+      },
     ],
   },
 ];
@@ -171,7 +333,7 @@ export function Menu() {
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
           style={{
-            backgroundImage: `url(/images/trio_scoops_hero_1780571685837.png)`,
+            backgroundImage: `url(/images/Nouveau dossier/sundae.jpeg)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/75 to-transparent" />
@@ -181,7 +343,7 @@ export function Menu() {
             animate={{ opacity: 0.8 }}
             className="font-jost text-[0.65rem] tracking-[0.25em] text-white uppercase mb-3"
           >
-            Le Plaisir Absolu des Sens
+            Notre Carte
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -190,8 +352,11 @@ export function Menu() {
             className="font-playfair font-light text-alabaster tracking-wide leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 3.8rem)" }}
           >
-            La Carte
+            Notre Carte
           </motion.h1>
+          <p className="mt-6 max-w-2xl mx-auto text-sm tracking-[0.1em] uppercase text-white/80 font-jost">
+            Des recettes créatives, des desserts glacés et des boissons fraîches pensés pour partager.
+          </p>
         </div>
       </section>
 
@@ -203,6 +368,7 @@ export function Menu() {
               <button
                 key={cat.key}
                 onClick={() => setActiveKey(cat.key)}
+                className={`rounded-full transition-all duration-300 ${activeKey === cat.key ? "bg-blue-500 text-slate-950 border-blue-500" : "bg-transparent text-white/70 border-white/10 hover:text-blue-300 hover:border-blue-200"}`}
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   fontSize: "0.72rem",
@@ -210,25 +376,8 @@ export function Menu() {
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   padding: "10px 22px",
-                  background: activeKey === cat.key ? "#1565C0" : "transparent",
-                  color: activeKey === cat.key ? "#0A2254" : "rgba(255, 255, 255,0.6)",
-                  border: "1px solid",
-                  borderColor: activeKey === cat.key ? "#1565C0" : "rgba(21, 101, 192,0.15)",
-                  cursor: "pointer",
-                  transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+                  borderWidth: "1px",
                   whiteSpace: "nowrap",
-                }}
-                onMouseEnter={e => {
-                  if (activeKey !== cat.key) {
-                    e.currentTarget.style.color = "#1565C0";
-                    e.currentTarget.style.borderColor = "rgba(21, 101, 192,0.45)";
-                  }
-                }}
-                onMouseLeave={e => {
-                  if (activeKey !== cat.key) {
-                    e.currentTarget.style.color = "rgba(255, 255, 255,0.6)";
-                    e.currentTarget.style.borderColor = "rgba(21, 101, 192,0.15)";
-                  }
                 }}
               >
                 <span className="mr-2">{cat.icon}</span>
@@ -239,80 +388,97 @@ export function Menu() {
         </div>
       </section>
 
-      {/* ── CARD PRESENTATION ───────────────────────────── */}
+      {/* ── MENU DETAILS ────────────────────────────────── */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <motion.div
           key={activeKey}
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.55 }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-            
-            {/* Visual block */}
-            <div className="lg:col-span-5 lg:sticky top-40">
+            <div className="lg:col-span-5 lg:sticky top-36">
               <FadeIn>
-                <div className="relative">
-                  <div className="aspect-[4/3] overflow-hidden bg-secondary shadow-2xl">
-                    <img
-                      src={active.img}
-                      alt={active.label}
-                      className="w-full h-full object-cover"
-                    />
+                <div className="relative overflow-hidden rounded-[32px] shadow-[0_50px_120px_rgba(15,23,42,0.12)]">
+                  <img src={active.img} alt={active.label} className="w-full h-full min-h-[420px] object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6 text-white">
+                    <div className="text-xs uppercase tracking-[0.25em] text-white/70">Category</div>
+                    <h2 className="mt-2 text-3xl font-playfair">{active.label}</h2>
+                    {active.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-100">{active.tagline}</p>}
+                    {active.note && !active.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-100">{active.note}</p>}
                   </div>
-                  {/* Decorative Frame */}
-                  <div
-                    className="absolute -bottom-4 -right-4 -z-10 w-[70%] h-[70%] border border-accent/35"
-                    style={{ pointerEvents: "none" }}
-                  />
                 </div>
               </FadeIn>
             </div>
 
-            {/* Menu items listing */}
             <div className="lg:col-span-7">
-              <div className="font-jost text-[0.62rem] tracking-[0.25em] text-accent uppercase mb-2">
-                Sélection Premium
+              <div className="mb-8">
+                <div className="font-jost text-[0.62rem] tracking-[0.25em] text-accent uppercase mb-3">
+                  Tous nos produits sont préparés minute
+                </div>
+                <h2 className="font-playfair font-light text-3xl md:text-4xl text-primary leading-tight">
+                  {active.label}
+                </h2>
+                {(active.note || active.tagline) && (
+                  <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                    {active.tagline ?? active.note}
+                  </p>
+                )}
               </div>
-              <h2 className="font-playfair font-light text-3xl md:text-4xl text-primary leading-tight mb-8">
-                {active.label}
-              </h2>
-              
-              <div className="flex flex-col">
-                {active.items.map((item, idx) => (
-                  <FadeIn key={item.name} delay={idx * 0.05}>
-                    <div className="flex flex-col py-6 border-b border-stone-200/50 group">
-                      <div className="flex items-baseline justify-between gap-4">
-                        <div className="flex items-center gap-3">
-                          {/* Small gold bullet */}
-                          <div className="w-[5px] h-[5px] rounded-full bg-accent opacity-60 group-hover:scale-150 transition-transform duration-300" />
-                          <h3 className="font-jost text-base font-normal text-primary group-hover:text-accent transition-colors duration-300">
-                            {item.name}
-                          </h3>
+
+              <div className="space-y-10">
+                {active.groups ? (
+                  active.groups.map((group, groupIndex) => (
+                    <FadeIn key={group.title} delay={groupIndex * 0.05}>
+                      <div className="rounded-3xl border border-slate-200/80 bg-slate-50 p-8 shadow-sm">
+                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+                          <div>
+                            <h3 className="text-xl font-semibold text-slate-950">{group.title}</h3>
+                            {group.subtitle && <p className="mt-2 text-sm text-slate-600">{group.subtitle}</p>}
+                          </div>
                         </div>
-                        {/* Empty line separator matching Michelin menus */}
-                        <div className="flex-1 border-b border-dotted border-stone-200 group-hover:border-accent/30 transition-colors hidden md:block mx-4" />
-                        <span className="font-playfair italic text-xs text-accent">Signature</span>
+
+                        <div className="space-y-5">
+                          {group.items.map(item => (
+                            <div key={item.name} className="flex flex-col gap-2">
+                              <div className="flex items-center justify-between gap-4">
+                                <h4 className="font-jost text-base font-medium text-slate-950">{item.name}</h4>
+                                {item.price && <span className="text-sm font-semibold text-slate-600">{item.price}</span>}
+                              </div>
+                              {item.desc && <p className="text-sm leading-relaxed text-slate-600">{item.desc}</p>}
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      {item.desc && (
-                        <p className="font-jost text-[0.82rem] font-light text-muted-foreground leading-relaxed mt-2 pl-4">
-                          {item.desc}
-                        </p>
-                      )}
-                    </div>
-                  </FadeIn>
-                ))}
+                    </FadeIn>
+                  ))
+                ) : (
+                  active.items.map((item, idx) => (
+                    <FadeIn key={item.name} delay={idx * 0.05}>
+                      <div className="border-b border-slate-200/70 pb-6 last:border-0 last:pb-0">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                          <div>
+                            <h3 className="font-jost text-base font-semibold text-slate-950">{item.name}</h3>
+                            {item.desc && <p className="mt-2 text-sm text-slate-600 leading-relaxed">{item.desc}</p>}
+                          </div>
+                          {item.price && (
+                            <div className="text-sm font-semibold text-slate-600">{item.price}</div>
+                          )}
+                        </div>
+                      </div>
+                    </FadeIn>
+                  ))
+                )}
               </div>
             </div>
-
           </div>
         </motion.div>
       </section>
 
-      {/* ── NOTE DE BAS ─────────────────────────────────── */}
       <section className="bg-obsidian text-alabaster/80 py-16 px-6 text-center border-t border-white/5">
         <p className="font-jost text-[0.82rem] font-light leading-relaxed max-w-xl mx-auto">
-          Toutes nos compositions glacées sont préparées artisanalement chaque jour.<br />
+          Toutes nos compositions sont préparées à la main et servies avec soin.<br />
           <span className="text-accent mt-2 block font-normal tracking-[0.1em] uppercase">Agadir, Founty Bay · Ouvert tous les jours de 09:00 à 01:00</span>
         </p>
       </section>

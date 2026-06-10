@@ -230,8 +230,7 @@ export function Footer() {
             letterSpacing: "0.1em" 
           }}
         >
-          <span>© 2026 AMARENA LA MAMA DEL GELATO – Tous droits réservés.</span>
-          <span>Designed with luxury and crafted for excellence. Agadir · Maroc</span>
+          <span>© 2026 AMARENA LA MAMA DEL GELATO</span>
         </div>
       </div>
     </footer>

@@ -4,39 +4,94 @@ import { X, ZoomIn } from "lucide-react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const allPhotos = [
+  // GELATO SECTION - Diversified
   {
-    src: "/images/pistachio_scoop_1780571675058.png",
-    alt: "Pistache Royale - Gelato à la pistache de Bronte",
+    src: "/images/Nouveau%20dossier/sundae.jpeg",
+    alt: "Sundae Signature Amarena avec toppings gourmands",
     category: "Gelato",
   },
   {
-    src: "/images/chocolate_pour_1780571728870.png",
-    alt: "Noir Intense 72° - Chocolat grand cru coulant",
-    category: "Chocolat",
-  },
-  {
-    src: "/images/sundae_crystal_1780571697743.png",
-    alt: "Sundae Royal dans sa coupe en cristal",
-    category: "Dessert",
-  },
-  {
-    src: "/images/vanilla_cone_elegant_1780571715882.png",
-    alt: "Vanille Tahitienne dorée infusée en cornet artisanal",
+    src: "/images/Nouveau%20dossier/sundae%202.jpeg",
+    alt: "Dégustation de gelato artisanal en coupe",
     category: "Gelato",
   },
   {
-    src: "/images/trio_scoops_hero_1780571685837.png",
-    alt: "La trilogie de parfums signatures Amarena",
+    src: "/images/Nouveau%20dossier/frappes.jpeg",
+    alt: "Frappé glacé onctueux Amarena",
     category: "Gelato",
   },
   {
-    src: "/images/shop_interior_1780571741726.png",
-    alt: "Le salon feutré Amarena à Founty Bay Agadir",
-    category: "Salon",
+    src: "/images/Nouveau%20dossier/affogato%202.jpeg",
+    alt: "Affogato al caffè : la rencontre du chaud et du froid",
+    category: "Gelato",
+  },
+  
+  // DESSERTS SECTION
+  {
+    src: "/images/Nouveau%20dossier/brownie.jpeg",
+    alt: "Brownie gourmand au chocolat et noisettes",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/brownie%201.jpeg",
+    alt: "Cœur coulant chocolat et sa boule de vanille",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/gaufres.png",
+    alt: "Gaufre artisanale croustillante et fruits frais",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/pancakes.png",
+    alt: "Pancakes moelleux nappés de chocolat",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/san%20sebastian.jpeg",
+    alt: "San Sebastian Cheesecake : onctuosité absolue",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/fondant.jpeg",
+    alt: "Fondant au chocolat pure origine",
+    category: "Desserts",
+  },
+  {
+    src: "/images/Nouveau%20dossier/cookie%20dough%20et%20hot%20puddings.jpeg",
+    alt: "Cookie Dough tiède et sa glace fondante",
+    category: "Desserts",
+  },
+
+  // BOISSONS SECTION
+  {
+    src: "/images/Nouveau%20dossier/matcha.jpeg",
+    alt: "Cérémonie Matcha : thé vert premium glacé",
+    category: "Boissons",
+  },
+  {
+    src: "/images/Nouveau%20dossier/matcha%201.jpeg",
+    alt: "Matcha Latte aux notes végétales",
+    category: "Boissons",
+  },
+  {
+    src: "/images/Nouveau%20dossier/ice%20cafe.jpeg",
+    alt: "Café de spécialité glacé Amarena",
+    category: "Boissons",
+  },
+  {
+    src: "/images/Nouveau%20dossier/jus.jpeg",
+    alt: "Cocktail de fruits frais pressés minute",
+    category: "Boissons",
+  },
+  {
+    src: "/images/Nouveau%20dossier/milk%20shake.jpeg",
+    alt: "Milkshake Premium onctueux et riche en saveurs",
+    category: "Boissons",
   },
 ];
 
-const cats = ["Tous", "Gelato", "Chocolat", "Dessert", "Salon"];
+const cats = ["Tous", "Gelato", "Desserts", "Boissons"];
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);
@@ -60,67 +115,50 @@ export function Gallery() {
   const filtered = activeFilter === "Tous" ? allPhotos : allPhotos.filter(p => p.category === activeFilter);
 
   return (
-    <div style={{ background: "#FFFFFF" }} className="min-h-screen">
+    <div style={{ background: "#F8FAFF" }} className="min-h-screen">
       {/* ── HERO SECTION ────────────────────────────────── */}
       <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url(/images/shop_interior_1780571741726.png)` }}
+          style={{ backgroundImage: `url("/images/Nouveau%20dossier/frappes.jpeg")` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2254] via-[#0A2254]/60 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.8 }}
-            className="font-jost text-[0.65rem] tracking-[0.25em] text-white uppercase mb-3"
-          >
-            L'Univers Visuel Amarena
-          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="font-playfair font-light text-alabaster tracking-wide leading-tight"
-            style={{ fontSize: "clamp(2rem, 5vw, 3.8rem)" }}
+            className="font-playfair font-light text-white tracking-wide leading-tight"
+            style={{ fontSize: "clamp(2.5rem, 6vw, 4.2rem)" }}
           >
-            Galerie
+            Galerie d'Exceptions
           </motion.h1>
         </div>
       </section>
 
       {/* ── FILTERS SECTION ─────────────────────────────── */}
-      <section className="px-6 pt-12 pb-8">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-3">
+      <section className="px-6 pt-16 pb-12">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4">
           {cats.map(c => (
             <button
               key={c}
               onClick={() => setActiveFilter(c)}
               style={{
                 fontFamily: "'Jost', sans-serif",
-                fontSize: "0.72rem",
-                fontWeight: 400,
-                letterSpacing: "0.15em",
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                padding: "10px 24px",
-                background: activeFilter === c ? "#0A2254" : "transparent",
-                color: activeFilter === c ? "#FFFFFF" : "#6B6252",
+                padding: "12px 32px",
+                background: activeFilter === c ? "#1565C0" : "white",
+                color: activeFilter === c ? "white" : "#0A2254",
                 border: "1px solid",
-                borderColor: activeFilter === c ? "#0A2254" : "rgba(17, 17, 17, 0.15)",
+                borderColor: activeFilter === c ? "#1565C0" : "rgba(10, 34, 84, 0.1)",
                 cursor: "pointer",
-                transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+                transition: "all 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+                boxShadow: activeFilter === c ? "0 10px 25px -5px rgba(21, 101, 192, 0.4)" : "none",
               }}
-              onMouseEnter={e => {
-                if (activeFilter !== c) {
-                  e.currentTarget.style.borderColor = "#1565C0";
-                  e.currentTarget.style.color = "#1565C0";
-                }
-              }}
-              onMouseLeave={e => {
-                if (activeFilter !== c) {
-                  e.currentTarget.style.borderColor = "rgba(17, 17, 17, 0.15)";
-                  e.currentTarget.style.color = "#6B6252";
-                }
-              }}
+              className="hover:shadow-lg"
             >
               {c}
             </button>
@@ -133,45 +171,45 @@ export function Gallery() {
         <div className="max-w-7xl mx-auto">
           <motion.div layout>
             <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 640: 2, 1024: 3 }}>
-              <Masonry gutter="16px">
+              <Masonry gutter="24px">
                 {filtered.map((photo, i) => (
                   <FadeIn key={photo.src} delay={i * 0.05}>
                     <div
-                      className="relative overflow-hidden group cursor-pointer border border-stone-200/40"
+                      className="relative overflow-hidden group cursor-pointer bg-white shadow-sm border border-[#1565C0]/5 rounded-sm"
                       onClick={() => setLightbox(photo)}
                     >
-                      <img
-                        src={photo.src}
-                        alt={photo.alt}
-                        className="w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                        style={{ display: "block" }}
-                        loading="lazy"
-                      />
-                      {/* Hover glassmorphic overlay */}
-                      <div
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center pointer-events-none z-10"
-                        style={{ background: "rgba(11, 11, 12, 0.45)", backdropFilter: "blur(4px)" }}
-                      >
-                        <motion.div 
-                          initial={{ scale: 0.8 }}
-                          whileHover={{ scale: 1.1 }}
-                          className="w-12 h-12 rounded-full border border-accent flex items-center justify-center"
-                        >
-                          <ZoomIn size={18} color="#1565C0" />
-                        </motion.div>
+                      <div className="overflow-hidden">
+                        <img
+                          src={photo.src}
+                          alt={photo.alt}
+                          className="w-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110"
+                          style={{ display: "block" }}
+                          loading="lazy"
+                        />
                       </div>
                       
-                      {/* Floating bottom label on hover */}
+                      {/* Hover Overlay */}
                       <div
-                        className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[0.5s] z-20"
-                        style={{ background: "linear-gradient(to top, rgba(11, 11, 12, 0.7), transparent)" }}
+                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 flex flex-col items-center justify-center pointer-events-none z-10"
+                        style={{ background: "rgba(10, 34, 84, 0.7)", backdropFilter: "blur(4px)" }}
                       >
-                        <span style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.55rem", letterSpacing: "0.2em", color: "#1565C0", textTransform: "uppercase" }}>
+                        <motion.div 
+                          initial={{ scale: 0.5, opacity: 0 }}
+                          whileInView={{ scale: 1, opacity: 1 }}
+                          className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center mb-4"
+                        >
+                          <ZoomIn size={24} color="white" />
+                        </motion.div>
+                        <span className="font-jost text-[0.6rem] tracking-[0.3em] text-[#1565C0] uppercase font-bold bg-white px-4 py-1">
                           {photo.category}
                         </span>
-                        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.85rem", color: "#FFFFFF", marginTop: "2px" }}>
-                          {photo.alt.split(" - ")[0]}
-                        </div>
+                      </div>
+                      
+                      {/* Elegant Text Overlay */}
+                      <div className="p-6 bg-white border-t border-[#1565C0]/5 group-hover:bg-[#F8FAFF] transition-colors duration-500">
+                        <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#0A2254", lineHeight: 1.4 }}>
+                          {photo.alt}
+                        </p>
                       </div>
                     </div>
                   </FadeIn>
@@ -189,53 +227,38 @@ export function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-            style={{ background: "rgba(11, 11, 12, 0.94)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-6"
+            style={{ background: "rgba(10, 34, 84, 0.96)", backdropFilter: "blur(15px)", WebkitBackdropFilter: "blur(15px)" }}
             onClick={() => setLightbox(null)}
           >
             <motion.div
-              initial={{ scale: 0.92, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.92, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="relative max-w-4xl w-full flex flex-col items-center gap-4"
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 260, damping: 25 }}
+              className="relative max-w-5xl w-full flex flex-col items-center"
               onClick={e => e.stopPropagation()}
             >
-              {/* Asymmetrical Gold outline behind picture */}
-              <div className="absolute inset-4 border border-accent/20 pointer-events-none -z-10" />
-
               <img
                 src={lightbox.src}
                 alt={lightbox.alt}
-                className="w-full h-auto max-h-[75vh] object-contain border border-white/5"
+                className="w-full h-auto max-h-[80vh] object-contain shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5"
               />
               
-              <div className="text-center w-full px-6 py-2">
-                <span style={{ fontFamily: "'Jost', sans-serif", fontSize: "0.62rem", letterSpacing: "0.2em", color: "#1565C0", textTransform: "uppercase" }}>
-                  {lightbox.category}
+              <div className="mt-8 text-center bg-white/5 backdrop-blur-md px-10 py-6 border border-white/10 w-full md:w-auto">
+                <span className="font-jost text-[0.65rem] tracking-[0.4em] text-[#1565C0] uppercase font-bold block mb-2">
+                  Collection {lightbox.category}
                 </span>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", color: "#FFFFFF", marginTop: "4px" }}>
+                <h2 className="font-playfair text-xl md:text-2xl text-white italic">
                   {lightbox.alt}
-                </div>
+                </h2>
               </div>
               
               <button
                 onClick={() => setLightbox(null)}
-                className="absolute -top-12 right-0 flex items-center justify-center"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  background: "transparent",
-                  border: "none",
-                  color: "#FFFFFF",
-                  cursor: "pointer",
-                  transition: "all 0.3s",
-                }}
-                onMouseEnter={e => { e.currentTarget.style.color = "#1565C0"; }}
-                onMouseLeave={e => { e.currentTarget.style.color = "#FFFFFF"; }}
-                aria-label="Fermer"
+                className="absolute -top-16 right-0 md:-right-12 flex items-center justify-center w-12 h-12 text-white hover:text-[#1565C0] transition-colors duration-300"
               >
-                <X size={24} />
+                <X size={32} />
               </button>
             </motion.div>
           </motion.div>
