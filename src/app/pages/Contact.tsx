@@ -91,7 +91,7 @@ export function Contact() {
       <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url(/images/Nouveau dossier/ice cafe.jpeg)` }}
+          style={{ backgroundImage: `url(/images/gallery/ice-cafe.jpeg)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">

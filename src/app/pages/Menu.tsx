@@ -23,7 +23,7 @@ const categories = [
     key: "glaces",
     label: "Glaces Artisanales",
     icon: "🍨",
-    img: "/images/Nouveau dossier/sundae.jpeg",
+    img: "/images/gallery/sundae.jpeg",
     tagline: "1 à 3 boules, parfums signature et cornets artisanaux.",
     items: [
       { name: "1 Boule", price: "13 DH" },
@@ -38,7 +38,7 @@ const categories = [
     key: "ice-cream-slices",
     label: "Ice Cream Slices",
     icon: "🍦",
-    img: "/images/Nouveau dossier/matcha.jpeg",
+    img: "/images/gallery/matcha.jpeg",
     note: "Des portions gourmandes, idéales à partager.",
     items: [
       { name: "1 Ice Cream Slice", price: "30 DH" },
@@ -50,7 +50,7 @@ const categories = [
     key: "crunch-box",
     label: "Crunch Box",
     icon: "📦",
-    img: "/images/Nouveau dossier/sundae.jpeg",
+    img: "/images/gallery/sundae.jpeg",
     note: "Tous à 18 DH.",
     items: [
       { name: "Ferrero Rocher" },
@@ -66,7 +66,7 @@ const categories = [
     key: "iced-coffees",
     label: "Iced Coffees",
     icon: "🧊",
-    img: "/images/Nouveau dossier/ice cafe.jpeg",
+    img: "/images/gallery/ice-cafe.jpeg",
     note: "Sirops disponibles : Caramel · Vanille · Noisette · Gingembre · Cannelle · Popcorn. Tous à 28 DH.",
     items: [
       { name: "Iced Latte" },
@@ -81,7 +81,7 @@ const categories = [
     key: "milkshakes",
     label: "Milkshakes",
     icon: "🥤",
-    img: "/images/Nouveau dossier/milk shake.jpeg",
+    img: "/images/gallery/milk-shake.jpeg",
     tagline: "Préparés avec une boule de glace et de la soft vanilla ice cream.",
     note: "Tous à 38 DH.",
     items: [
@@ -100,7 +100,7 @@ const categories = [
     key: "affogato",
     label: "Affogato",
     icon: "☕",
-    img: "/images/Nouveau dossier/affogato.jpeg",
+    img: "/images/gallery/affogato.jpeg",
     note: "Tous à 38 DH.",
     items: [
       { name: "Affogato Tiramisu" },
@@ -117,7 +117,7 @@ const categories = [
     key: "frappes",
     label: "Frappés",
     icon: "🧋",
-    img: "/images/Nouveau dossier/frappes.jpeg",
+    img: "/images/gallery/frappes.jpeg",
     note: "Tous à 36 DH.",
     items: [
       { name: "Tropical Mango Bubble" },
@@ -134,7 +134,7 @@ const categories = [
     key: "sundaes",
     label: "Sundaes",
     icon: "🍧",
-    img: "/images/Nouveau dossier/sundae.jpeg",
+    img: "/images/gallery/sundae.jpeg",
     note: "Tous à 48 DH.",
     groups: [
       {
@@ -180,7 +180,7 @@ const categories = [
     key: "boissons-chaudes",
     label: "Boissons Chaudes",
     icon: "☕",
-    img: "/images/Nouveau dossier/boisson chaud.png",
+    img: "/images/gallery/boisson-chaud.png",
     items: [
       { name: "Café Latte", price: "20 DH" },
       { name: "Cappuccino", price: "22 DH" },
@@ -197,7 +197,7 @@ const categories = [
     key: "jus",
     label: "Jus",
     icon: "🧃",
-    img: "/images/Nouveau dossier/jus.jpeg",
+    img: "/images/gallery/jus.jpeg",
     items: [
       { name: "Orange", price: "20 DH" },
       { name: "Fraise", price: "20 DH" },
@@ -215,7 +215,7 @@ const categories = [
     key: "matcha",
     label: "Matcha",
     icon: "🍵",
-    img: "/images/Nouveau dossier/matcha.jpeg",
+    img: "/images/gallery/matcha.jpeg",
     note: "Tous à 28 DH.",
     items: [
       { name: "Strawberry Matcha Latte" },
@@ -233,7 +233,7 @@ const categories = [
     key: "gaufres",
     label: "Gaufres & Crêpes",
     icon: "🧇",
-    img: "/images/Nouveau dossier/gaufres.png",
+    img: "/images/gallery/gaufres.png",
     items: [
       { name: "Gaufre Ferrero Rocher", desc: "Gaufre croustillante nappée de chocolat noisette, éclats de Ferrero Rocher et pralin", price: "48 DH" },
       { name: "Gaufre Kinder Bueno", desc: "Gaufre avec sauce Kinder Bueno, morceaux croustillants et gelato vanille", price: "48 DH" },
@@ -253,7 +253,7 @@ const categories = [
     key: "pancakes",
     label: "Pancakes",
     icon: "🥞",
-    img: "/images/Nouveau dossier/pancakes.png",
+    img: "/images/gallery/pancakes.png",
     note: "Tous à 46 DH.",
     items: [
       { name: "Crème Nutella", desc: "Boule glace vanille, sauce Nutella, Oreo crumbs, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
@@ -268,7 +268,7 @@ const categories = [
     key: "cookie-dough",
     label: "Cookie Dough & Hot Puddings",
     icon: "🍪",
-    img: "/images/Nouveau dossier/cookie dough et hot puddings 1.jpeg",
+    img: "/images/gallery/cookie-dough-et-hot-puddings-1.jpeg",
     note: "Tous à 46 DH.",
     items: [
       { name: "Double Treat", desc: "Cookie chocolat au lait + chocolat blanc, boule glace Oreo, soft vanilla ice cream, Ferrero Rocher, sauces chocolat blanc et au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
@@ -286,7 +286,7 @@ const categories = [
     key: "sweets-cakes",
     label: "Sweets & Cakes",
     icon: "🍰",
-    img: "/images/Nouveau dossier/san sebastian.jpeg",
+    img: "/images/gallery/san-sebastian.jpeg",
     groups: [
       {
         title: "San Sebastian",
@@ -339,7 +339,7 @@ export function Menu() {
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
           style={{
-            backgroundImage: `url(/images/Nouveau dossier/sundae.jpeg)`,
+            backgroundImage: `url(/images/gallery/sundae.jpeg)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/75 to-transparent" />

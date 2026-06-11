@@ -6,86 +6,86 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const allPhotos = [
   // GELATO SECTION - Diversified
   {
-    src: "/images/Nouveau%20dossier/sundae.jpeg",
+    src: "/images/gallery/sundae.jpeg",
     alt: "Sundae Signature Amarena avec toppings gourmands",
     category: "Gelato",
   },
   {
-    src: "/images/Nouveau%20dossier/sundae%202.jpeg",
+    src: "/images/gallery/sundae-2.jpeg",
     alt: "Dégustation de gelato artisanal en coupe",
     category: "Gelato",
   },
   {
-    src: "/images/Nouveau%20dossier/frappes.jpeg",
+    src: "/images/gallery/frappes.jpeg",
     alt: "Frappé glacé onctueux Amarena",
     category: "Gelato",
   },
   {
-    src: "/images/Nouveau%20dossier/affogato%202.jpeg",
+    src: "/images/gallery/affogato-2.jpeg",
     alt: "Affogato al caffè : la rencontre du chaud et du froid",
     category: "Gelato",
   },
   
   // DESSERTS SECTION
   {
-    src: "/images/Nouveau%20dossier/brownie.jpeg",
+    src: "/images/gallery/brownie.jpeg",
     alt: "Brownie gourmand au chocolat et noisettes",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/brownie%201.jpeg",
+    src: "/images/gallery/brownie-1.jpeg",
     alt: "Cœur coulant chocolat et sa boule de vanille",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/gaufres.png",
+    src: "/images/gallery/gaufres.png",
     alt: "Gaufre artisanale croustillante et fruits frais",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/pancakes.png",
+    src: "/images/gallery/pancakes.png",
     alt: "Pancakes moelleux nappés de chocolat",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/san%20sebastian.jpeg",
+    src: "/images/gallery/san-sebastian.jpeg",
     alt: "San Sebastian Cheesecake : onctuosité absolue",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/fondant.jpeg",
+    src: "/images/gallery/fondant.jpeg",
     alt: "Fondant au chocolat pure origine",
     category: "Desserts",
   },
   {
-    src: "/images/Nouveau%20dossier/cookie%20dough%20et%20hot%20puddings.jpeg",
+    src: "/images/gallery/cookie-dough-et-hot-puddings.jpeg",
     alt: "Cookie Dough tiède et sa glace fondante",
     category: "Desserts",
   },
 
   // BOISSONS SECTION
   {
-    src: "/images/Nouveau%20dossier/matcha.jpeg",
+    src: "/images/gallery/matcha.jpeg",
     alt: "Cérémonie Matcha : thé vert premium glacé",
     category: "Boissons",
   },
   {
-    src: "/images/Nouveau%20dossier/matcha%201.jpeg",
+    src: "/images/gallery/matcha-1.jpeg",
     alt: "Matcha Latte aux notes végétales",
     category: "Boissons",
   },
   {
-    src: "/images/Nouveau%20dossier/ice%20cafe.jpeg",
+    src: "/images/gallery/ice-cafe.jpeg",
     alt: "Café de spécialité glacé Amarena",
     category: "Boissons",
   },
   {
-    src: "/images/Nouveau%20dossier/jus.jpeg",
+    src: "/images/gallery/jus.jpeg",
     alt: "Cocktail de fruits frais pressés minute",
     category: "Boissons",
   },
   {
-    src: "/images/Nouveau%20dossier/milk%20shake.jpeg",
+    src: "/images/gallery/milk-shake.jpeg",
     alt: "Milkshake Premium onctueux et riche en saveurs",
     category: "Boissons",
   },
@@ -120,7 +120,7 @@ export function Gallery() {
       <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url("/images/Nouveau%20dossier/frappes.jpeg")` }}
+          style={{ backgroundImage: `url("/images/gallery/frappes.jpeg")` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A2254] via-[#0A2254]/60 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">

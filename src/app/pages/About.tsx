@@ -34,7 +34,7 @@ export function About() {
         <div
           className="absolute inset-0 bg-center bg-cover scale-105"
           style={{
-            backgroundImage: `url(/images/Nouveau dossier/sundae.jpeg)`,
+            backgroundImage: `url(/images/gallery/sundae.jpeg)`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-transparent" />
@@ -98,7 +98,7 @@ export function About() {
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden bg-secondary shadow-2xl">
                   <img 
-                    src="/images/WhatsApp Image 2026-06-08 at 10.54.23 (1).jpeg"
+                    src="/images/WhatsApp-Image-2026-06-08-at-10.54.23-1.jpeg"
                     alt="Gelatos artisanaux signatures Amarena"
                     className="w-full h-full object-cover transition-transform duration-[6s] hover:scale-105"
                   />

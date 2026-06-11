@@ -51,25 +51,25 @@ const univers = [
     icon: "",
     title: "Glaces Artisanales",
     desc: "Gelatos d'exception et sorbets de fruits frais préparés selon les véritables secrets italiens.",
-    img: "/images/Nouveau%20dossier/sundae.jpeg",
+    img: "/images/gallery/sundae.jpeg",
   },
   {
     icon: "🍫",
     title: "Chocolaterie Fine",
     desc: "Des créations chocolatées d'une rare intensité, elaborées à partir de grands crus.",
-    img: "/images/Nouveau%20dossier/brownie.jpeg",
+    img: "/images/gallery/brownie.jpeg",
   },
   {
     icon: "🧇",
     title: "Gaufres & Crêpes",
     desc: "Pâtes faites maison, cuites à la minute et surmontées de toppings gourmands d'exception.",
-    img: "/images/Nouveau%20dossier/gaufres.png",
+    img: "/images/gallery/gaufres.png",
   },
   {
     icon: "☕",
     title: "Boissons Signatures",
     desc: "Matcha japonais d'origine, cafés de spécialité glacés et milkshakes premium onctueux.",
-    img: "/images/Nouveau%20dossier/matcha.jpeg",
+    img: "/images/gallery/matcha.jpeg",
   },
 ];
 
@@ -209,7 +209,7 @@ export function Home() {
             <FadeIn>
               <div className="relative aspect-[4/5] overflow-hidden bg-[#0A2254]/5 shadow-2xl rounded-sm">
                 <img
-                  src="/images/Nouveau%20dossier/affogato.jpeg"
+                  src="/images/gallery/affogato.jpeg"
                   alt="L'atmosphère d'Amarena Agadir"
                   className="w-full h-full object-cover transition-transform duration-[6s] hover:scale-105"
                 />
