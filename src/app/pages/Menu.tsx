@@ -322,6 +322,12 @@ const categories = [
   },
 ];
 
+const stripPrice = (text: string | undefined): string | undefined => {
+  if (!text) return text;
+  const cleaned = text.replace(/[\s·.-]*tous\s+à\s+\d+\s*dh\.?/gi, "").trim();
+  return cleaned === "" ? undefined : cleaned;
+};
+
 export function Menu() {
   const [activeKey, setActiveKey] = useState("glaces");
   const active = categories.find(c => c.key === activeKey)!;
@@ -406,7 +412,7 @@ export function Menu() {
                     <div className="text-xs uppercase tracking-[0.25em] text-white/70">Category</div>
                     <h2 className="mt-2 text-3xl font-playfair">{active.label}</h2>
                     {active.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-100">{active.tagline}</p>}
-                    {active.note && !active.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-100">{active.note}</p>}
+                    {stripPrice(active.note) && !active.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-100">{stripPrice(active.note)}</p>}
                   </div>
                 </div>
               </FadeIn>
@@ -420,9 +426,9 @@ export function Menu() {
                 <h2 className="font-playfair font-light text-3xl md:text-4xl text-primary leading-tight">
                   {active.label}
                 </h2>
-                {(active.note || active.tagline) && (
+                {(stripPrice(active.note) || active.tagline) && (
                   <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                    {active.tagline ?? active.note}
+                    {active.tagline ?? stripPrice(active.note)}
                   </p>
                 )}
               </div>
@@ -435,7 +441,7 @@ export function Menu() {
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                           <div>
                             <h3 className="text-xl font-semibold text-slate-950">{group.title}</h3>
-                            {group.subtitle && <p className="mt-2 text-sm text-slate-600">{group.subtitle}</p>}
+                            {stripPrice(group.subtitle) && <p className="mt-2 text-sm text-slate-600">{stripPrice(group.subtitle)}</p>}
                           </div>
                         </div>
 
@@ -444,7 +450,6 @@ export function Menu() {
                             <div key={item.name} className="flex flex-col gap-2">
                               <div className="flex items-center justify-between gap-4">
                                 <h4 className="font-jost text-base font-medium text-slate-950">{item.name}</h4>
-                                {item.price && <span className="text-sm font-semibold text-slate-600">{item.price}</span>}
                               </div>
                               {item.desc && <p className="text-sm leading-relaxed text-slate-600">{item.desc}</p>}
                             </div>
@@ -462,9 +467,6 @@ export function Menu() {
                             <h3 className="font-jost text-base font-semibold text-slate-950">{item.name}</h3>
                             {item.desc && <p className="mt-2 text-sm text-slate-600 leading-relaxed">{item.desc}</p>}
                           </div>
-                          {item.price && (
-                            <div className="text-sm font-semibold text-slate-600">{item.price}</div>
-                          )}
                         </div>
                       </div>
                     </FadeIn>

@@ -344,10 +344,10 @@ export function Contact() {
               style={{ height: "440px", background: "#FFFFFF" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27541.48834917997!2d-9.585521999999999!3d30.407982999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b6f00ab38b81%3A0xc3c5421a115ff92a!2sQuartier%20Founty%2C%20Agadir%2080000!5e0!3m2!1sfr!2sma!4v1717512800000!5m2!1sfr!2sma"
+                src="https://maps.google.com/maps?q=Amarena%20Gelato,%20Commerce%2016,%20Immeuble%20D,%20Q76%20Agadir%20Bay%20View%202,%20Quartier%20Founty,%20Agadir&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="440"
-                style={{ border: 0, filter: "grayscale(100%) contrast(120%) opacity(80%)" }}
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
