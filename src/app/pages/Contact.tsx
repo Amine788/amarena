@@ -23,7 +23,7 @@ const contactInfo = [
     icon: <MapPin size={16} />,
     label: "Adresse",
     value: "Commerce 16, Immeuble D, Q76 Agadir Bay View 2\nQuartier Founty, Agadir",
-    action: "https://maps.google.com/?q=Amarena+Gelato+Agadir+Founty",
+    action: "https://www.google.com/maps/place/AMARENA/@30.3983712,-9.5893666,17z/data=!4m14!1m7!3m6!1s0xdb3b7c4d24f96d9:0x9100e3dda0b0e6be!2sAMARENA!8m2!3d30.3983712!4d-9.5867917!16s%2Fg%2F11npsg06s3!3m5!1s0xdb3b7c4d24f96d9:0x9100e3dda0b0e6be!8m2!3d30.3983712!4d-9.5867917!16s%2Fg%2F11npsg06s3?entry=ttu",
     actionLabel: "Itinéraire",
   },
   {
@@ -344,7 +344,7 @@ export function Contact() {
               style={{ height: "440px", background: "#FFFFFF" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.2829023348126!2d-9.583094824578135!3d30.400392374741364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDI0JzAxLjQiTiA5wrAzNCc1MC4zIlc!5e0!3m2!1sfr!2sma!4v1717512800000!5m2!1sfr!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.365313980327!2d-9.5893666!3d30.3983712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7c4d24f96d9%3A0x9100e3dda0b0e6be!2sAMARENA!5e0!3m2!1sfr!2sma!4v1717512800000!5m2!1sfr!2sma"
                 width="100%"
                 height="440"
                 style={{ border: 0 }}
