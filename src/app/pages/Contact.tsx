@@ -298,7 +298,7 @@ export function Contact() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex flex-col items-center text-center py-10 gap-5"
                   >
-                    <div style={{ width: "64px", height: "64px", border: "1.5px solid #1565C0", display: "flex", alignItems: "center", justifyCenter: "center", borderRadius: "50%" }} className="items-center justify-center">
+                    <div style={{ width: "64px", height: "64px", border: "1.5px solid #1565C0", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "50%" }} className="items-center justify-center">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1565C0" strokeWidth="1.5"><polyline points="20 6 9 17 4 12"/></svg>
                     </div>
                     <h3 className="font-playfair text-2xl text-alabaster mt-2">
@@ -344,7 +344,7 @@ export function Contact() {
               style={{ height: "440px", background: "#FFFFFF" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.365313980327!2d-9.5893666!3d30.3983712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7c4d24f96d9%3A0x9100e3dda0b0e6be!2sAMARENA!5e0!3m2!1sfr!2sma!4v1717512800000!5m2!1sfr!2sma"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.365313980327!2d-9.5893666!3d30.3983712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7c4d24f96d9:0x9100e3dda0b0e6be!2sAMARENA!5e0!3m2!1sfr!2sma!4v1717512800000!5m2!1sfr!2sma"
                 width="100%"
                 height="440"
                 style={{ border: 0 }}
