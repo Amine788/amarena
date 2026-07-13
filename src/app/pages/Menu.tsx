@@ -18,12 +18,35 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const categories = [
+interface MenuItem {
+  name: string;
+  desc?: string;
+  price?: string;
+}
+
+interface MenuGroup {
+  title: string;
+  subtitle?: string;
+  items: MenuItem[];
+}
+
+interface MenuCategory {
+  key: string;
+  label: string;
+  icon: string;
+  img: string;
+  tagline?: string;
+  note?: string;
+  items?: MenuItem[];
+  groups?: MenuGroup[];
+}
+
+const categories: MenuCategory[] = [
   {
     key: "glaces",
     label: "Glaces Artisanales",
     icon: "🍨",
-    img: "/images/gallery/sundae.jpeg",
+    img: "/images/gallery/sundae.webp",
     tagline: "1 à 3 boules, parfums signature et cornets artisanaux.",
     items: [
       { name: "1 Boule", price: "13 DH" },
@@ -38,7 +61,7 @@ const categories = [
     key: "ice-cream-slices",
     label: "Ice Cream Slices",
     icon: "🍦",
-    img: "/images/gallery/matcha.jpeg",
+    img: "/images/gallery/matcha.webp",
     note: "Des portions gourmandes, idéales à partager.",
     items: [
       { name: "1 Ice Cream Slice", price: "30 DH" },
@@ -50,7 +73,7 @@ const categories = [
     key: "crunch-box",
     label: "Crunch Box",
     icon: "📦",
-    img: "/images/gallery/sundae.jpeg",
+    img: "/images/gallery/sundae.webp",
     note: "Tous à 18 DH.",
     items: [
       { name: "Ferrero Rocher" },
@@ -66,7 +89,7 @@ const categories = [
     key: "iced-coffees",
     label: "Iced Coffees",
     icon: "🧊",
-    img: "/images/gallery/ice-cafe.jpeg",
+    img: "/images/gallery/ice-cafe.webp",
     note: "Sirops disponibles : Caramel · Vanille · Noisette · Gingembre · Cannelle · Popcorn. Tous à 28 DH.",
     items: [
       { name: "Iced Latte" },
@@ -81,7 +104,7 @@ const categories = [
     key: "milkshakes",
     label: "Milkshakes",
     icon: "🥤",
-    img: "/images/gallery/milk-shake.jpeg",
+    img: "/images/gallery/milk-shake.webp",
     tagline: "Préparés avec une boule de glace et de la soft vanilla ice cream.",
     note: "Tous à 38 DH.",
     items: [
@@ -100,7 +123,7 @@ const categories = [
     key: "affogato",
     label: "Affogato",
     icon: "☕",
-    img: "/images/gallery/affogato.jpeg",
+    img: "/images/gallery/affogato.webp",
     note: "Tous à 38 DH.",
     items: [
       { name: "Affogato Tiramisu" },
@@ -117,7 +140,7 @@ const categories = [
     key: "frappes",
     label: "Frappés",
     icon: "🧋",
-    img: "/images/gallery/frappes.jpeg",
+    img: "/images/gallery/frappes.webp",
     note: "Tous à 36 DH.",
     items: [
       { name: "Tropical Mango Bubble" },
@@ -134,7 +157,7 @@ const categories = [
     key: "sundaes",
     label: "Sundaes",
     icon: "🍧",
-    img: "/images/gallery/sundae.jpeg",
+    img: "/images/gallery/sundae.webp",
     note: "Tous à 48 DH.",
     groups: [
       {
@@ -180,7 +203,7 @@ const categories = [
     key: "boissons-chaudes",
     label: "Boissons Chaudes",
     icon: "☕",
-    img: "/images/gallery/boisson-chaud.png",
+    img: "/images/gallery/boisson-chaud.webp",
     items: [
       { name: "Café Latte", price: "20 DH" },
       { name: "Cappuccino", price: "22 DH" },
@@ -197,7 +220,7 @@ const categories = [
     key: "jus",
     label: "Jus",
     icon: "🧃",
-    img: "/images/gallery/jus.jpeg",
+    img: "/images/gallery/jus.webp",
     items: [
       { name: "Orange", price: "20 DH" },
       { name: "Fraise", price: "20 DH" },
@@ -215,7 +238,7 @@ const categories = [
     key: "matcha",
     label: "Matcha",
     icon: "🍵",
-    img: "/images/gallery/matcha.jpeg",
+    img: "/images/gallery/matcha.webp",
     note: "Tous à 28 DH.",
     items: [
       { name: "Strawberry Matcha Latte" },
@@ -233,7 +256,7 @@ const categories = [
     key: "gaufres",
     label: "Gaufres & Crêpes",
     icon: "🧇",
-    img: "/images/gallery/gaufres.png",
+    img: "/images/gallery/gaufres.webp",
     items: [
       { name: "Gaufre Ferrero Rocher", desc: "Gaufre croustillante nappée de chocolat noisette, éclats de Ferrero Rocher et pralin", price: "48 DH" },
       { name: "Gaufre Kinder Bueno", desc: "Gaufre avec sauce Kinder Bueno, morceaux croustillants et gelato vanille", price: "48 DH" },
@@ -253,7 +276,7 @@ const categories = [
     key: "pancakes",
     label: "Pancakes",
     icon: "🥞",
-    img: "/images/gallery/pancakes.png",
+    img: "/images/gallery/pancakes.webp",
     note: "Tous à 46 DH.",
     items: [
       { name: "Crème Nutella", desc: "Boule glace vanille, sauce Nutella, Oreo crumbs, crème vanille onctueuse, gaufrette Amarena", price: "46 DH" },
@@ -268,7 +291,7 @@ const categories = [
     key: "cookie-dough",
     label: "Cookie Dough & Hot Puddings",
     icon: "🍪",
-    img: "/images/gallery/cookie-dough-et-hot-puddings-1.jpeg",
+    img: "/images/gallery/cookie-dough-et-hot-puddings-1.webp",
     note: "Tous à 46 DH.",
     items: [
       { name: "Double Treat", desc: "Cookie chocolat au lait + chocolat blanc, boule glace Oreo, soft vanilla ice cream, Ferrero Rocher, sauces chocolat blanc et au lait, copeaux chocolat, gaufrette Amarena", price: "46 DH" },
@@ -286,7 +309,7 @@ const categories = [
     key: "sweets-cakes",
     label: "Sweets & Cakes",
     icon: "🍰",
-    img: "/images/gallery/san-sebastian.jpeg",
+    img: "/images/gallery/san-sebastian.webp",
     groups: [
       {
         title: "San Sebastian",
@@ -335,14 +358,7 @@ export function Menu() {
   return (
     <div style={{ background: "#FFFFFF" }} className="min-h-screen">
       {/* ── HERO SECTION ────────────────────────────────── */}
-      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{
-            backgroundImage: `url(/images/gallery/sundae.jpeg)`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/75 to-transparent" />
+      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden bg-obsidian">
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -358,8 +374,14 @@ export function Menu() {
             className="font-playfair font-light text-alabaster tracking-wide leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 3.8rem)" }}
           >
-            Notre Carte
+            Notre <em className="font-playfair font-normal italic text-accent">Carte</em>
           </motion.h1>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "64px" }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="h-[2px] bg-accent mx-auto mt-6"
+          />
           <p className="mt-6 max-w-2xl mx-auto text-sm tracking-[0.1em] uppercase text-white/80 font-jost">
             Des recettes créatives, des desserts glacés et des boissons fraîches pensés pour partager.
           </p>
@@ -374,7 +396,7 @@ export function Menu() {
               <button
                 key={cat.key}
                 onClick={() => setActiveKey(cat.key)}
-                className={`rounded-full transition-all duration-300 ${activeKey === cat.key ? "bg-blue-500 text-slate-950 border-blue-500" : "bg-transparent text-white/70 border-white/10 hover:text-blue-300 hover:border-blue-200"}`}
+                className={`rounded-sm transition-all duration-300 ${activeKey === cat.key ? "bg-[#1565C0] text-white border-[#1565C0] shadow-[0_10px_25px_-5px_rgba(21,101,192,0.4)]" : "bg-transparent text-white/70 border-white/10 hover:text-[#1565C0] hover:border-[#1565C0]/40"}`}
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   fontSize: "0.72rem",
@@ -437,11 +459,11 @@ export function Menu() {
                 {active.groups ? (
                   active.groups.map((group, groupIndex) => (
                     <FadeIn key={group.title} delay={groupIndex * 0.05}>
-                      <div className="rounded-3xl border border-slate-200/80 bg-slate-50 p-8 shadow-sm">
+                      <div className="rounded-sm border border-[#0A2254]/8 bg-[#F8FAFF] p-8">
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                           <div>
-                            <h3 className="text-xl font-semibold text-slate-950">{group.title}</h3>
-                            {stripPrice(group.subtitle) && <p className="mt-2 text-sm text-slate-600">{stripPrice(group.subtitle)}</p>}
+                            <h3 className="font-playfair text-xl text-[#0A2254]">{group.title}</h3>
+                            {stripPrice(group.subtitle) && <p className="mt-2 text-sm text-muted-foreground">{stripPrice(group.subtitle)}</p>}
                           </div>
                         </div>
 
@@ -449,9 +471,9 @@ export function Menu() {
                           {group.items.map(item => (
                             <div key={item.name} className="flex flex-col gap-2">
                               <div className="flex items-center justify-between gap-4">
-                                <h4 className="font-jost text-base font-medium text-slate-950">{item.name}</h4>
+                                <h4 className="font-jost text-base font-medium text-[#0A2254]">{item.name}</h4>
                               </div>
-                              {item.desc && <p className="text-sm leading-relaxed text-slate-600">{item.desc}</p>}
+                              {item.desc && <p className="text-sm leading-relaxed text-muted-foreground">{item.desc}</p>}
                             </div>
                           ))}
                         </div>
@@ -459,13 +481,13 @@ export function Menu() {
                     </FadeIn>
                   ))
                 ) : (
-                  active.items.map((item, idx) => (
+                  (active.items ?? []).map((item, idx) => (
                     <FadeIn key={item.name} delay={idx * 0.05}>
-                      <div className="border-b border-slate-200/70 pb-6 last:border-0 last:pb-0">
+                      <div className="border-b border-[#0A2254]/8 pb-6 last:border-0 last:pb-0">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                           <div>
-                            <h3 className="font-jost text-base font-semibold text-slate-950">{item.name}</h3>
-                            {item.desc && <p className="mt-2 text-sm text-slate-600 leading-relaxed">{item.desc}</p>}
+                            <h3 className="font-jost text-base font-semibold text-[#0A2254]">{item.name}</h3>
+                            {item.desc && <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>}
                           </div>
                         </div>
                       </div>

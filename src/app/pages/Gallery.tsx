@@ -4,94 +4,55 @@ import { X, ZoomIn } from "lucide-react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const allPhotos = [
-  // GELATO SECTION - Diversified
-  {
-    src: "/images/gallery/sundae.jpeg",
-    alt: "Sundae Signature Amarena avec toppings gourmands",
-    category: "Gelato",
-  },
-  {
-    src: "/images/gallery/sundae-2.jpeg",
-    alt: "Dégustation de gelato artisanal en coupe",
-    category: "Gelato",
-  },
-  {
-    src: "/images/gallery/frappes.jpeg",
-    alt: "Frappé glacé onctueux Amarena",
-    category: "Gelato",
-  },
-  {
-    src: "/images/gallery/affogato-2.jpeg",
-    alt: "Affogato al caffè : la rencontre du chaud et du froid",
-    category: "Gelato",
-  },
-  
   // DESSERTS SECTION
   {
-    src: "/images/gallery/brownie.jpeg",
-    alt: "Brownie gourmand au chocolat et noisettes",
+    src: "/images/gallery/DSC09788.webp",
+    alt: "Part de gâteau chocolat zébré, éclats d'Oreo et framboises fraîches",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/brownie-1.jpeg",
-    alt: "Cœur coulant chocolat et sa boule de vanille",
+    src: "/images/gallery/DSC09789.webp",
+    alt: "Dressage signature au chocolat noir et blanc, vue de détail",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/gaufres.png",
-    alt: "Gaufre artisanale croustillante et fruits frais",
+    src: "/images/gallery/DSC09791.webp",
+    alt: "Duo de créations gourmandes servies sur marbre",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/pancakes.png",
-    alt: "Pancakes moelleux nappés de chocolat",
+    src: "/images/gallery/DSC09793.webp",
+    alt: "Présentation en salon de nos desserts signature",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/san-sebastian.jpeg",
-    alt: "San Sebastian Cheesecake : onctuosité absolue",
+    src: "/images/gallery/DSC09794.webp",
+    alt: "Boule de glace vanille et zestes d'orange sur nappage chocolat",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/fondant.jpeg",
-    alt: "Fondant au chocolat pure origine",
+    src: "/images/gallery/DSC09795.webp",
+    alt: "Framboises fraîches sur lit de chocolat marbré, vue du dessus",
     category: "Desserts",
   },
   {
-    src: "/images/gallery/cookie-dough-et-hot-puddings.jpeg",
-    alt: "Cookie Dough tiède et sa glace fondante",
+    src: "/images/gallery/DSC09796.webp",
+    alt: "Nos desserts signature accompagnés d'une boisson glacée Amarena",
     category: "Desserts",
   },
-
-  // BOISSONS SECTION
   {
-    src: "/images/gallery/matcha.jpeg",
-    alt: "Cérémonie Matcha : thé vert premium glacé",
-    category: "Boissons",
+    src: "/images/gallery/DSC09797.webp",
+    alt: "Moment gourmand : dessert glacé et boisson signature",
+    category: "Desserts",
   },
   {
-    src: "/images/gallery/matcha-1.jpeg",
-    alt: "Matcha Latte aux notes végétales",
-    category: "Boissons",
-  },
-  {
-    src: "/images/gallery/ice-cafe.jpeg",
-    alt: "Café de spécialité glacé Amarena",
-    category: "Boissons",
-  },
-  {
-    src: "/images/gallery/jus.jpeg",
-    alt: "Cocktail de fruits frais pressés minute",
-    category: "Boissons",
-  },
-  {
-    src: "/images/gallery/milk-shake.jpeg",
-    alt: "Milkshake Premium onctueux et riche en saveurs",
-    category: "Boissons",
+    src: "/images/gallery/DSC09800.webp",
+    alt: "L'art de la présentation à la Maison Amarena",
+    category: "Desserts",
   },
 ];
 
-const cats = ["Tous", "Gelato", "Desserts", "Boissons"];
+const cats = ["Tous", "Desserts"];
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null);
@@ -117,12 +78,7 @@ export function Gallery() {
   return (
     <div style={{ background: "#F8FAFF" }} className="min-h-screen">
       {/* ── HERO SECTION ────────────────────────────────── */}
-      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url("/images/gallery/frappes.jpeg")` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2254] via-[#0A2254]/60 to-transparent" />
+      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden bg-[#0A2254]">
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -131,8 +87,14 @@ export function Gallery() {
             className="font-playfair font-light text-white tracking-wide leading-tight"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.2rem)" }}
           >
-            Galerie d'Exceptions
+            Galerie <em className="font-playfair font-normal italic text-accent">d'Exceptions</em>
           </motion.h1>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "64px" }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="h-[2px] bg-accent mx-auto mt-6"
+          />
         </div>
       </section>
 

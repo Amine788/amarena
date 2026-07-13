@@ -86,12 +86,7 @@ export function Reviews() {
   return (
     <div style={{ background: "#FFFFFF" }}>
       {/* ── HERO SECTION ────────────────────────────────── */}
-      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{ backgroundImage: `url(/images/gallery/sundae.jpeg)` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/75 to-transparent" />
+      <section className="relative h-[45vh] min-h-[340px] flex items-end pb-16 px-6 overflow-hidden bg-obsidian">
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -107,8 +102,14 @@ export function Reviews() {
             className="font-playfair font-light text-alabaster tracking-wide leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 3.8rem)" }}
           >
-            Avis Clients
+            Avis <em className="font-playfair font-normal italic text-accent">Clients</em>
           </motion.h1>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "64px" }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="h-[2px] bg-accent mx-auto mt-6"
+          />
         </div>
       </section>
 

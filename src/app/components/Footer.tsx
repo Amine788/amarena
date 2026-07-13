@@ -4,16 +4,15 @@ import { Instagram, Mail, Phone, MapPin, Clock } from "lucide-react";
 export function Footer() {
   return (
     <footer style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #F4F8FE 100%)", color: "#0A2254" }}>
-      {/* Thin Gold divider */}
-      <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(21, 101, 192, 0.15), transparent)" }} />
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col lg:flex-row gap-16 items-start">
+        {/* Left: info grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 flex-1 w-full">
         {/* Brand section */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-6">
-            <img 
-              src="/logo.png" 
-              alt="Amarena" 
+            <img
+              src="/logo.png"
+              alt="Amarena"
               style={{
                 height: "140px",
                 width: "auto",
@@ -24,31 +23,6 @@ export function Footer() {
                 opacity: 0.9,
               }}
             />
-            <div className="flex flex-col justify-center items-start">
-              <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: "1.25rem",
-                  fontWeight: 500,
-                  letterSpacing: "0.12em",
-                  color: "#0A2254",
-                  lineHeight: 1.1,
-                }}
-              >
-                AMARENA
-              </div>
-              <div
-                style={{
-                  fontFamily: "'Jost', sans-serif",
-                  fontSize: "0.5rem",
-                  fontWeight: 400,
-                  letterSpacing: "0.25em",
-                  color: "#1565C0",
-                }}
-              >
-                LA MAMA DEL GELATO
-              </div>
-            </div>
           </div>
           <p
             style={{
@@ -215,6 +189,44 @@ export function Footer() {
                 </span>
               </div>
             ))}
+          </div>
+        </div>
+        </div>
+
+        {/* Right: boutique photo — preserves the photo's native 2:3 portrait format */}
+        <div className="w-full lg:w-auto flex justify-center lg:justify-end shrink-0 -mr-6 lg:-mr-12">
+          <div className="relative w-full max-w-[400px] aspect-[2/3] overflow-hidden shadow-2xl">
+            <img
+              src="/images/gallery/fotter.webp"
+              alt="La boutique Amarena à Founty Bay, Agadir"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A2254] via-[#0A2254]/35 to-transparent" />
+            <div className="absolute inset-3 border border-white/15 pointer-events-none" />
+            <div className="absolute bottom-6 left-0 right-0 text-center px-4">
+              <span
+                style={{
+                  fontFamily: "'Jost', sans-serif",
+                  fontSize: "0.68rem",
+                  letterSpacing: "0.32em",
+                  color: "rgba(255,255,255,0.8)",
+                  textTransform: "uppercase",
+                }}
+              >
+                Notre Boutique
+              </span>
+              <h3
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "1.9rem",
+                  color: "#FFFFFF",
+                  fontWeight: 400,
+                  marginTop: "8px",
+                }}
+              >
+                Founty Bay, Agadir
+              </h3>
+            </div>
           </div>
         </div>
       </div>

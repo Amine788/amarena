@@ -30,14 +30,7 @@ export function About() {
   return (
     <div style={{ background: "#FFFFFF" }}>
       {/* ── HERO SECTION ────────────────────────────────── */}
-      <section className="relative h-[60vh] min-h-[440px] flex items-end pb-24 px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-center bg-cover scale-105"
-          style={{
-            backgroundImage: `url(/images/gallery/sundae.jpeg)`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-transparent" />
+      <section className="relative h-[60vh] min-h-[440px] flex items-end pb-24 px-6 overflow-hidden bg-obsidian">
         <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
           <motion.div
             initial={{ opacity: 0, letterSpacing: "0.4em" }}
@@ -54,8 +47,14 @@ export function About() {
             className="font-playfair font-light text-alabaster tracking-wide leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
           >
-            Notre Histoire
+            Notre <em className="font-playfair font-normal italic text-accent">Histoire</em>
           </motion.h1>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "64px" }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="h-[2px] bg-accent mx-auto mt-6"
+          />
         </div>
       </section>
 
@@ -98,7 +97,7 @@ export function About() {
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden bg-secondary shadow-2xl">
                   <img 
-                    src="/images/WhatsApp-Image-2026-06-08-at-10.54.23-1.jpeg"
+                    src="/images/WhatsApp-Image-2026-06-08-at-10.54.23-1.webp"
                     alt="Gelatos artisanaux signatures Amarena"
                     className="w-full h-full object-cover transition-transform duration-[6s] hover:scale-105"
                   />

@@ -12,7 +12,7 @@ export function WhatsAppButton() {
       transition={{ delay: 1.5, type: "spring", stiffness: 200 }}
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center rounded-full shadow-2xl"
+      className="fixed bottom-6 left-6 z-50 flex items-center justify-center rounded-full shadow-2xl"
       style={{
         width: "56px",
         height: "56px",
